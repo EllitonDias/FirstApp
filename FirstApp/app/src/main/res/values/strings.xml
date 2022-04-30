@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">First App</string>
+    <string name="txt_Cadastro">Cadastro</string>
+    <string name="txt_sexo">Sexo</string>
+    <string name="radio_Masculino">Masculino</string>
+    <string name="radio_Feminino">Feminino</string>
+    <string name="btn_Cadastrar">Cadastrar</string>
+</resources>
