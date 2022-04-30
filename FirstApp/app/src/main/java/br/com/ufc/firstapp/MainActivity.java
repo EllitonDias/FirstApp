@@ -71,8 +71,4 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void chamarActivity2(View view) {
-        Intent activity2 = new Intent(this,MainActivity2.class);
-        startActivity(activity2);
-    }
 }

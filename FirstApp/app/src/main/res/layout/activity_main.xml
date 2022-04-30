@@ -26,6 +26,7 @@
         android:ems="10"
         android:hint="Nome"
         android:inputType="textCapWords"
+        android:textColor="#000000"
         android:textColorHint="@color/black"
         tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
@@ -37,6 +38,7 @@
         android:ems="10"
         android:hint="Telefone"
         android:inputType="phone"
+        android:textColor="@color/black"
         android:textColorHint="@color/black"
         tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
@@ -48,6 +50,7 @@
         android:ems="10"
         android:hint="E-mail"
         android:inputType="textEmailAddress"
+        android:textColor="@color/black"
         android:textColorHint="@color/black"
         tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
@@ -127,13 +130,5 @@
         android:textColor="@color/purple_700"
         android:textSize="16sp"
         android:textStyle="bold" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        android:text="Activity2"
-        android:onClick="chamarActivity2"/>
 
 </LinearLayout>
