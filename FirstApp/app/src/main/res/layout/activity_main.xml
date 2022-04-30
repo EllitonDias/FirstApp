@@ -74,13 +74,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/radio_Masculino"
+            android:textColor="@color/black"
             android:textColorLink="#1997FB" />
 
         <RadioButton
             android:id="@+id/activity_main_feminino"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/radio_Feminino" />
+            android:text="@string/radio_Feminino"
+            android:textColor="@color/black" />
     </RadioGroup>
 
     <Button
