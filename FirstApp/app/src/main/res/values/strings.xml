@@ -9,4 +9,7 @@
     <string name="btn_Tela3">Tela 3</string>
     <string name="txt_Long">Aperte Longamente</string>
     <string name="txt_list">List</string>
+    <string name="item_Sim">Sim</string>
+    <string name="item_Nao">Não</string>
+    <string name="item_Talvez">Talvez</string>
 </resources>

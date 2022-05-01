@@ -1,12 +1,15 @@
 package br.com.ufc.firstapp.activity;
 
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
@@ -29,6 +32,28 @@ public class ListV extends AppCompatActivity {
         List<Cliente> client = clients();
         ArrayAdapter<Cliente> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1,client);
         list.setAdapter(adapter);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.acitivity_menu_lv,menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.activity_menulv_Sim:
+                Toast.makeText(this,"Você clicou no sim",Toast.LENGTH_LONG).show();
+                break;
+            case R.id.activity_menulv_Nao:
+                Toast.makeText(this,"Você clicou no Não",Toast.LENGTH_LONG).show();
+                break;
+            case R.id.activity_menulv_Talvez:
+                Toast.makeText(this,"Você clicou no Talvez",Toast.LENGTH_LONG).show();
+                break;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     private void longC() {
