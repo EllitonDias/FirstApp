@@ -28,8 +28,8 @@ public class MainActivity2 extends AppCompatActivity {
 
         String str[]={"Sim","Não"};
         auto = findViewById(R.id.activity_main_autoCompleteTextView);
-        ArrayAdapter adp = new ArrayAdapter<String>(this,android.R.layout.simple_dropdown_item_1line,str);
-        auto.setThreshold( 1 );
+        ArrayAdapter<String> adp = new ArrayAdapter<>(this,android.R.layout.simple_dropdown_item_1line,str);
+        auto.setThreshold(1);
         auto.setAdapter(adp);
     }@Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -39,8 +39,7 @@ public class MainActivity2 extends AppCompatActivity {
     public void PlayMusica(View view) {
         audio.start();
     }
-    private void nomeMusica(View v){
-
+    private void nomeAudio(View v){
         if(verificar.isChecked()){
             resNomeMusica.setText("Audio");
         }else{

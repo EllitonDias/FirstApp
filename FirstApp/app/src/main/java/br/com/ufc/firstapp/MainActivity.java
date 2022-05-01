@@ -13,28 +13,23 @@ import android.widget.TextView;
 import com.google.android.material.snackbar.Snackbar;
 
 public class MainActivity extends AppCompatActivity {
+
     private EditText  nome, telefone, email;
     private RadioButton masculino, feminino;
     private TextView resNome, resTelefone, resEmail,resSexo;
     private Button mudarTela;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        nome = findViewById(R.id.activity_main_nome);
-        telefone = findViewById(R.id.activity_main_telefone);
-        email = findViewById(R.id.activity_main_email);
+        inicializacaoDosCampos();
+        mudarTela();
+        ConfigurandoBtn();
+    }
 
-        masculino = findViewById(R.id.activity_main_masculino);
-        feminino = findViewById(R.id.activity_main_feminino);
-
-        resNome = findViewById(R.id.activity_main_resNome);
-        resTelefone = findViewById(R.id.activity_main_resTelefone);
-        resEmail = findViewById(R.id.activity_main_resEmail);
-        resSexo = findViewById(R.id.activity_main_sexo);
-
-        mudarTela = findViewById(R.id.activity_main_buttonTela);
+    private void mudarTela() {
         mudarTela.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -42,7 +37,9 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(mt);
             }
         });
+    }
 
+    private void ConfigurandoBtn() {
         Button btnCadastrar = findViewById(R.id.activity_main_btn_cadastrar);
 
         btnCadastrar.setOnClickListener(new View.OnClickListener() {
@@ -60,6 +57,23 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+    private void inicializacaoDosCampos() {
+        nome = findViewById(R.id.activity_main_nome);
+        telefone = findViewById(R.id.activity_main_telefone);
+        email = findViewById(R.id.activity_main_email);
+
+        masculino = findViewById(R.id.activity_main_masculino);
+        feminino = findViewById(R.id.activity_main_feminino);
+
+        resNome = findViewById(R.id.activity_main_resNome);
+        resTelefone = findViewById(R.id.activity_main_resTelefone);
+        resEmail = findViewById(R.id.activity_main_resEmail);
+        resSexo = findViewById(R.id.activity_main_sexo);
+
+        mudarTela = findViewById(R.id.activity_main_buttonTela);
+    }
+
     private void btnRadio(View view){
 
         String editNome = nome.getText().toString();
