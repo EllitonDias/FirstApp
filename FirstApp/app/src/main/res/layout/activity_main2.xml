@@ -28,7 +28,7 @@
         android:checked="true"
         android:text="ToggleButton"
         android:textOff="Tirar nome"
-        android:textOn="Nome da musica"
+        android:textOn="Nome do audio"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"

@@ -13,7 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity2 extends AppCompatActivity {
 
-    MediaPlayer Morena;
+    MediaPlayer audio;
     ToggleButton verificar;
     TextView resNomeMusica;
     AutoCompleteTextView auto;
@@ -22,7 +22,7 @@ public class MainActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
-        Morena = MediaPlayer.create(this,R.raw.Morena);
+        audio = MediaPlayer.create(this,R.raw.audio);
         resNomeMusica = findViewById(R.id.activity_main_resMusica);
         verificar = findViewById(R.id.toggleButton);
 
@@ -37,12 +37,12 @@ public class MainActivity2 extends AppCompatActivity {
         return true;
     }
     public void PlayMusica(View view) {
-        Morena.start();
+        audio.start();
     }
     private void nomeMusica(View v){
 
         if(verificar.isChecked()){
-            resNomeMusica.setText("Morena");
+            resNomeMusica.setText("Audio");
         }else{
 
         }

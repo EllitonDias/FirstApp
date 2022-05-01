@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText  nome, telefone, email;
     private RadioButton masculino, feminino;
     private TextView resNome, resTelefone, resEmail,resSexo;
+    private Button mudarTela;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +33,15 @@ public class MainActivity extends AppCompatActivity {
         resTelefone = findViewById(R.id.activity_main_resTelefone);
         resEmail = findViewById(R.id.activity_main_resEmail);
         resSexo = findViewById(R.id.activity_main_sexo);
+
+        mudarTela = findViewById(R.id.activity_main_buttonTela);
+        mudarTela.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent mt = new Intent(getApplicationContext(),MainActivity2.class);
+                startActivity(mt);
+            }
+        });
 
         Button btnCadastrar = findViewById(R.id.activity_main_btn_cadastrar);
 
