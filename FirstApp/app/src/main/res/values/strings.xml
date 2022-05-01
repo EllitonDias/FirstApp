@@ -13,6 +13,7 @@
     <string name="item_Nao">Não</string>
     <string name="item_Talvez">Talvez</string>
     <string name="menu_Drop">Menu DropDown</string>
+    <string name="btn_TelaGrid">Tela Grid</string>
     <string-array name="menu_Nome">
         <item>Jose</item>
         <item>Maria</item>

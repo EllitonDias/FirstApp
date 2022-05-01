@@ -1,10 +1,12 @@
 package br.com.ufc.firstapp.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -28,6 +30,7 @@ public class ListV extends AppCompatActivity {
         setContentView(R.layout.activity_list_view);
         setTitle("List Clients");
 
+        tlGrid();
         menuDropDown();
 
         longC();
@@ -36,6 +39,17 @@ public class ListV extends AppCompatActivity {
         List<Cliente> client = clients();
         ArrayAdapter<Cliente> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1,client);
         list.setAdapter(adapter);
+    }
+
+    private void tlGrid() {
+        Button btnGrid = findViewById(R.id.activity_list_view_btnPxTela);
+        btnGrid.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent gridTl = new Intent(getApplicationContext(), GridV.class);
+                startActivity(gridTl);
+            }
+        });
     }
 
     private void menuDropDown() {
