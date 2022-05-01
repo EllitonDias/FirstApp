@@ -6,6 +6,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -26,12 +27,23 @@ public class ListV extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_view);
         setTitle("List Clients");
+
+        menuDropDown();
+
         longC();
 
         ListView list = findViewById(R.id.list_view_Lista);
         List<Cliente> client = clients();
         ArrayAdapter<Cliente> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1,client);
         list.setAdapter(adapter);
+    }
+
+    private void menuDropDown() {
+        Spinner menu_nome = findViewById(R.id.activity_list_view_menuS);
+        ArrayAdapter<CharSequence> adp = ArrayAdapter.createFromResource(this,R.array.menu_Nome,
+                android.R.layout.simple_spinner_item);
+        adp.setDropDownViewResource(android.R.layout.simple_spinner_item);
+        menu_nome.setAdapter(adp);
     }
 
     @Override
@@ -70,7 +82,7 @@ public class ListV extends AppCompatActivity {
 
     private List<Cliente> clients() {
         return new ArrayList<>(Arrays.asList(
-                new Cliente("josé",18,"1111222"),
+                new Cliente("Jose",18,"1111222"),
                 new Cliente("Maria",20,"22221111"),
                 new Cliente("Chico",21,"333331111")));
     }

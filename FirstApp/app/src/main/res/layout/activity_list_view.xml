@@ -19,6 +19,14 @@
         android:textSize="20sp"
         android:textStyle="bold" />
 
+    <Spinner
+        android:id="@+id/activity_list_view_menuS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/menu_Drop"
+        android:minHeight="48dp"
+        android:spinnerMode="dropdown" />
+
     <TextView
         android:id="@+id/activity_list_viw_txtList"
         android:layout_width="match_parent"

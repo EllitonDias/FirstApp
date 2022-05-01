@@ -12,4 +12,10 @@
     <string name="item_Sim">Sim</string>
     <string name="item_Nao">Não</string>
     <string name="item_Talvez">Talvez</string>
+    <string name="menu_Drop">Menu DropDown</string>
+    <string-array name="menu_Nome">
+        <item>Jose</item>
+        <item>Maria</item>
+        <item>Chico</item>
+    </string-array>
 </resources>
