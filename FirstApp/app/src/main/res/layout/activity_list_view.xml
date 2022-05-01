@@ -4,19 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ListV"
+    tools:context=".activity.ListV"
     android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/editTextTextPersonName"
+    <TextView
+        android:id="@+id/activity_list_view_long"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="15dp"
-        android:ems="10"
-        android:hint="Nome"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        android:textColorHint="@color/black" />
+        android:gravity="center"
+        android:text="@string/txt_Long"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <ListView
         android:id="@+id/list_view_Lista"

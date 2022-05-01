@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".activity.MainActivity">
 
     <TextView
         android:id="@+id/activity_main_cadastro"
@@ -23,6 +23,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="15dp"
+        android:backgroundTint="#000000"
+        android:backgroundTintMode="add"
         android:ems="10"
         android:hint="Nome"
         android:inputType="textCapWords"
@@ -35,6 +37,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="15dp"
+        android:backgroundTint="@color/black"
+        android:backgroundTintMode="add"
         android:ems="10"
         android:hint="Telefone"
         android:inputType="phone"
@@ -47,6 +51,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="15dp"
+        android:backgroundTint="#000000"
+        android:backgroundTintMode="add"
         android:ems="10"
         android:hint="E-mail"
         android:inputType="textEmailAddress"
@@ -97,8 +103,7 @@
         android:id="@+id/activity_main_resNome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
+        android:layout_margin="2dp"
         android:textColor="@color/purple_700"
         android:textSize="16sp"
         android:textStyle="bold" />
@@ -107,8 +112,7 @@
         android:id="@+id/activity_main_resTelefone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
+        android:layout_margin="2dp"
         android:textColor="@color/purple_700"
         android:textSize="16sp"
         android:textStyle="bold" />
@@ -117,8 +121,7 @@
         android:id="@+id/activity_main_resEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
+        android:layout_margin="2dp"
         android:textColor="@color/purple_700"
         android:textSize="16sp"
         android:textStyle="bold" />
@@ -127,8 +130,7 @@
         android:id="@+id/activity_main_resSexo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
+        android:layout_margin="2dp"
         android:textColor="@color/purple_700"
         android:textSize="16sp"
         android:textStyle="bold" />
@@ -137,8 +139,9 @@
         android:id="@+id/activity_main_buttonTela"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        android:text="Mudar tela" />
+        android:layout_margin="30dp"
+        android:text="@string/btn_MudarTela"
+        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
 
 </LinearLayout>

@@ -10,13 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FirstApp">
         <activity
-            android:name=".ListV"
+            android:name=".activity.ListV"
             android:exported="false" />
         <activity
-            android:name=".MainActivity2"
+            android:name=".activity.MainActivity2"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".activity.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/as"
-    tools:context=".MainActivity2">
+    tools:context=".activity.MainActivity2">
 
     <Button
         android:id="@+id/activity_main2_btnTocar"
@@ -60,6 +60,16 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/activity_main2_btnTocar" />
+
+    <Button
+        android:id="@+id/activity_main2_btn_Tela3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_main_autoCompleteTextView"
+        android:text="@string/btn_Tela3"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
